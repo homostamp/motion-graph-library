@@ -1,5 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
   <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0e15" />
+      <stop offset="100%" stop-color="#1a1c29" />
+    </linearGradient>
+
     <!-- Hexagon Gradient -->
     <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#9d4edd" />
@@ -34,10 +40,12 @@
     </filter>
   </defs>
 
-  <!-- Canvas Background -->
-  <rect width="400" height="400" rx="24" fill="url(#bgGrad)" />
+  <!-- Main Group Wrapper -->
+  <g id="homostamp-logo">
+    <!-- 1. Canvas Background -->
+    <rect width="400" height="400" rx="24" fill="url(#bgGrad)" />
 
-     <!-- 2. Inner Hexagon Framework -->
+    <!-- 2. Inner Hexagon Framework -->
     <polygon points="
       200, 75
       308.25, 137.5
@@ -51,23 +59,17 @@
       stroke-linejoin="round" />
 
     <!-- 3. Hexagon Vertices / Nodes -->
-    <!-- Top Node -->
     <circle cx="200" cy="75" r="5.5" fill="#00f5d4" filter="url(#dotGlow)" />
-    <!-- Top Right Node -->
     <circle cx="308.25" cy="137.5" r="5" fill="#a259ff" filter="url(#dotGlow)" />
-    <!-- Bottom Right Node -->
     <circle cx="308.25" cy="262.5" r="5" fill="#3a86ff" filter="url(#dotGlow)" />
-    <!-- Bottom Node -->
     <circle cx="200" cy="325" r="5.5" fill="#00f5d4" filter="url(#dotGlow)" />
-    <!-- Bottom Left Node -->
     <circle cx="91.75" cy="262.5" r="5" fill="#a259ff" filter="url(#dotGlow)" />
-    <!-- Top Left Node -->
     <circle cx="91.75" cy="137.5" r="5" fill="#3a86ff" filter="url(#dotGlow)" />
 
     <!-- 4. Inner Clock Circle -->
     <circle cx="200" cy="200" r="75" fill="none" stroke="url(#clockGrad)" stroke-width="3" />
 
-    <!-- Clock Ticks (12, 3, 6, 9 o'clock) -->
+    <!-- Clock Ticks -->
     <line x1="200" y1="131" x2="200" y2="139" stroke="#4cc9f0" stroke-width="2.5" stroke-linecap="round" />
     <line x1="269" y1="200" x2="261" y2="200" stroke="#4cc9f0" stroke-width="2.5" stroke-linecap="round" />
     <line x1="200" y1="269" x2="200" y2="261" stroke="#4cc9f0" stroke-width="2.5" stroke-linecap="round" />
@@ -83,11 +85,11 @@
 
     <!-- 6. Glowing Central Checkmark -->
     <path d="M 166 198 L 194 226 L 235 165" 
-          fill="none" 
           stroke="#00f5d4" 
           stroke-width="7.5" 
           stroke-linecap="round" 
           stroke-linejoin="round" 
+          fill="none"
           filter="url(#cyanGlow)" />
   </g>
 </svg>
