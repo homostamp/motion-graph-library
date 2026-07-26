@@ -299,5 +299,6 @@
 
   <!-- Footer -->
   <text x="400" y="940" class="footer">Arrangement Copyright © 2022 Music-for-Music-Teachers.com</text>
-  <text x="400" y="955" class="footer">All Rights Reserved</text>
+   <text x="400" y="955" class="footer">Converted To SVG by www.homostamp.com</text>
+  <text x="400" y="970" class="footer">All Rights Reserved</text>
 </svg>
