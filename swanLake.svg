@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1050" width="100%" height="100%" style="background-color: #ffffff; font-family: 'Times New Roman', serif;">
+  <!-- Style Definitions -->
+  <style>
+    .title { font-size: 28px; font-weight: bold; text-anchor: middle; }
+    .composer { font-size: 13px; text-anchor: end; }
+    .footer { font-size: 11px; text-anchor: middle; }
+    .measure-num { font-size: 12px; font-style: italic; }
+    .finger-num { font-size: 12px; font-weight: bold; }
+    .time-sig { font-size: 22px; font-weight: bold; text-anchor: middle; }
+    .staff-line { stroke: #000000; stroke-width: 1.2; }
+    .bar-line { stroke: #000000; stroke-width: 1.5; }
+    .thick-bar { stroke: #000000; stroke-width: 3.5; }
+    .stem { stroke: #000000; stroke-width: 1.5; stroke-linecap: round; }
+    .note-head { fill: #000000; }
+    .dashed-line { stroke: #000000; stroke-width: 1.2; stroke-dasharray: 4,4; }
+  </style>
+
+  <!-- Title & Header -->
+  <text x="400" y="60" class="title">Swan Lake</text>
+  <text x="730" y="95" class="composer">Tchaikovsky</text>
+
+  <!-- ================= SYSTEM 1 (Measures 1-4) ================= -->
+  <g id="system-1">
+    <!-- Treble Staff -->
+    <path class="staff-line" d="M 120,150 L 730,150 M 120,160 L 730,160 M 120,170 L 730,170 M 120,180 L 730,180 M 120,190 L 730,190" />
+    <!-- Bass Staff -->
+    <path class="staff-line" d="M 120,220 L 730,220 M 120,230 L 730,230 M 120,240 L 730,240 M 120,250 L 730,250 M 120,260 L 730,260" />
+
+    <!-- System Brace & Left Bar Line -->
+    <path d="M 120,150 Q 110,205 120,260" fill="none" stroke="#000" stroke-width="2.5" />
+    <line x1="120" y1="150" x2="120" y2="260" class="bar-line" />
+
+    <!-- Measure Lines -->
+    <line x1="320" y1="150" x2="320" y2="260" class="bar-line" />
+    <line x1="470" y1="150" x2="470" y2="260" class="bar-line" />
+    <line x1="600" y1="150" x2="600" y2="260" class="bar-line" />
+    <line x1="730" y1="150" x2="730" y2="260" class="bar-line" />
+
+    <!-- Clefs -->
+    <!-- Treble Clef Symbol -->
+    <text x="130" y="183" font-size="38" font-family="Arial, sans-serif">𝄞</text>
+    <!-- Bass Clef Symbol -->
+    <text x="130" y="250" font-size="30" font-family="Arial, sans-serif">𝄢</text>
+
+    <!-- Time Signature 4/4 -->
+    <text x="165" y="167" class="time-sig">4</text>
+    <text x="165" y="187" class="time-sig">4</text>
+    <text x="165" y="237" class="time-sig">4</text>
+    <text x="165" y="257" class="time-sig">4</text>
+
+    <!-- Measure 1 -->
+    <!-- RH: E5 Dotted Half -->
+    <text x="195" y="138" class="finger-num">5</text>
+    <ellipse cx="200" cy="150" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 200 150)" />
+    <circle cx="211" cy="150" r="1.8" />
+    <line x1="194" y1="152" x2="194" y2="175" class="stem" />
+
+    <!-- LH: A3 C4 E4 C4 -->
+    <ellipse cx="200" cy="260" rx="5.5" ry="4" class="note-head" transform="rotate(-20 200 260)" />
+    <line x1="205" y1="260" x2="205" y2="235" class="stem" />
+
+    <ellipse cx="230" cy="245" rx="5.5" ry="4" class="note-head" transform="rotate(-20 230 245)" />
+    <line x1="235" y1="245" x2="235" y2="220" class="stem" />
+
+    <ellipse cx="260" cy="230" rx="5.5" ry="4" class="note-head" transform="rotate(-20 260 230)" />
+    <line x1="265" y1="230" x2="265" y2="205" class="stem" />
+
+    <ellipse cx="290" cy="245" rx="5.5" ry="4" class="note-head" transform="rotate(-20 290 245)" />
+    <line x1="295" y1="245" x2="295" y2="220" class="stem" />
+
+    <!-- Measure 2 -->
+    <!-- RH: A4 C5 B4 A4 -->
+    <text x="330" y="138" class="finger-num">1</text>
+    <ellipse cx="335" cy="185" rx="5.5" ry="4" class="note-head" transform="rotate(-20 335 185)" />
+    <line x1="340" y1="185" x2="340" y2="155" class="stem" />
+
+    <ellipse cx="370" cy="170" rx="5.5" ry="4" class="note-head" transform="rotate(-20 370 170)" />
+    <line x1="365" y1="170" x2="365" y2="195" class="stem" />
+
+    <ellipse cx="400" cy="175" rx="5.5" ry="4" class="note-head" transform="rotate(-20 400 175)" />
+    <line x1="395" y1="175" x2="395" y2="200" class="stem" />
+
+    <ellipse cx="430" cy="185" rx="5.5" ry="4" class="note-head" transform="rotate(-20 430 185)" />
+    <line x1="435" y1="185" x2="435" y2="155" class="stem" />
+
+    <!-- LH: A3 C4 E4 C4 -->
+    <ellipse cx="335" cy="260" rx="5.5" ry="4" class="note-head" transform="rotate(-20 335 260)" />
+    <line x1="340" y1="260" x2="340" y2="235" class="stem" />
+
+    <ellipse cx="370" cy="245" rx="5.5" ry="4" class="note-head" transform="rotate(-20 370 245)" />
+    <line x1="375" y1="245" x2="375" y2="220" class="stem" />
+
+    <ellipse cx="400" cy="230" rx="5.5" ry="4" class="note-head" transform="rotate(-20 400 230)" />
+    <line x1="405" y1="230" x2="405" y2="205" class="stem" />
+
+    <ellipse cx="430" cy="245" rx="5.5" ry="4" class="note-head" transform="rotate(-20 430 245)" />
+    <line x1="435" y1="245" x2="435" y2="220" class="stem" />
+
+    <!-- Measure 3 -->
+    <!-- RH: B4 Dotted Half -->
+    <ellipse cx="490" cy="175" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 490 175)" />
+    <circle cx="501" cy="175" r="1.8" />
+    <line x1="484" y1="175" x2="484" y2="200" class="stem" />
+
+    <!-- LH: G#3 B3 E4 Rest -->
+    <text x="480" y="267" font-size="14">♯</text>
+    <ellipse cx="490" cy="265" rx="5.5" ry="4" class="note-head" transform="rotate(-20 490 265)" />
+    <line x1="495" y1="265" x2="495" y2="240" class="stem" />
+
+    <ellipse cx="520" cy="250" rx="5.5" ry="4" class="note-head" transform="rotate(-20 520 250)" />
+    <line x1="525" y1="250" x2="525" y2="225" class="stem" />
+
+    <ellipse cx="550" cy="230" rx="5.5" ry="4" class="note-head" transform="rotate(-20 550 230)" />
+    <line x1="555" y1="230" x2="555" y2="205" class="stem" />
+
+    <!-- Quarter Rest -->
+    <path d="M 575,235 C 578,238 578,242 573,246 C 578,248 577,252 572,255" fill="none" stroke="#000" stroke-width="2" />
+
+    <!-- Measure 4 -->
+    <!-- RH: B4 Dotted Half -->
+    <ellipse cx="620" cy="175" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 620 175)" />
+    <circle cx="631" cy="175" r="1.8" />
+    <line x1="614" y1="175" x2="614" y2="200" class="stem" />
+
+    <!-- LH: G#3 B3 E4 Rest -->
+    <text x="610" y="267" font-size="14">♯</text>
+    <ellipse cx="620" cy="265" rx="5.5" ry="4" class="note-head" transform="rotate(-20 620 265)" />
+    <line x1="625" y1="265" x2="625" y2="240" class="stem" />
+
+    <ellipse cx="650" cy="250" rx="5.5" ry="4" class="note-head" transform="rotate(-20 650 250)" />
+    <line x1="655" y1="250" x2="655" y2="225" class="stem" />
+
+    <ellipse cx="680" cy="230" rx="5.5" ry="4" class="note-head" transform="rotate(-20 680 230)" />
+    <line x1="685" y1="230" x2="685" y2="205" class="stem" />
+
+    <!-- Quarter Rest -->
+    <path d="M 705,235 C 708,238 708,242 703,246 C 708,248 707,252 702,255" fill="none" stroke="#000" stroke-width="2" />
+  </g>
+
+  <!-- ================= SYSTEM 2 (Measures 5-8) ================= -->
+  <g id="system-2" transform="translate(0, 200)">
+    <text x="120" y="135" class="measure-num">5</text>
+    
+    <!-- Treble & Bass Staves -->
+    <path class="staff-line" d="M 120,150 L 730,150 M 120,160 L 730,160 M 120,170 L 730,170 M 120,180 L 730,180 M 120,190 L 730,190" />
+    <path class="staff-line" d="M 120,220 L 730,220 M 120,230 L 730,230 M 120,240 L 730,240 M 120,250 L 730,250 M 120,260 L 730,260" />
+
+    <!-- System Brace & Bar Lines -->
+    <path d="M 120,150 Q 110,205 120,260" fill="none" stroke="#000" stroke-width="2.5" />
+    <line x1="120" y1="150" x2="120" y2="260" class="bar-line" />
+    <line x1="280" y1="150" x2="280" y2="260" class="bar-line" />
+    <line x1="430" y1="150" x2="430" y2="260" class="bar-line" />
+    <line x1="580" y1="150" x2="580" y2="260" class="bar-line" />
+    <line x1="730" y1="150" x2="730" y2="260" class="bar-line" />
+
+    <!-- Clefs -->
+    <text x="130" y="183" font-size="38" font-family="Arial, sans-serif">𝄞</text>
+    <text x="130" y="250" font-size="30" font-family="Arial, sans-serif">𝄢</text>
+
+    <!-- Measure 5 -->
+    <ellipse cx="170" cy="150" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 170 150)" />
+    <circle cx="181" cy="150" r="1.8" />
+    <line x1="164" y1="152" x2="164" y2="175" class="stem" />
+
+    <ellipse cx="170" cy="260" rx="5.5" ry="4" class="note-head" transform="rotate(-20 170 260)" />
+    <line x1="175" y1="260" x2="175" y2="235" class="stem" />
+    <ellipse cx="198" cy="245" rx="5.5" ry="4" class="note-head" transform="rotate(-20 198 245)" />
+    <line x1="203" y1="245" x2="203" y2="220" class="stem" />
+    <ellipse cx="225" cy="230" rx="5.5" ry="4" class="note-head" transform="rotate(-20 225 230)" />
+    <line x1="230" y1="230" x2="230" y2="205" class="stem" />
+    <ellipse cx="252" cy="245" rx="5.5" ry="4" class="note-head" transform="rotate(-20 252 245)" />
+    <line x1="257" y1="245" x2="257" y2="220" class="stem" />
+
+    <!-- Measure 6 -->
+    <ellipse cx="295" cy="185" rx="5.5" ry="4" class="note-head" transform="rotate(-20 295 185)" />
+    <line x1="300" y1="185" x2="300" y2="155" class="stem" />
+
+    <ellipse cx="330" cy="170" rx="5.5" ry="4" class="note-head" transform="rotate(-20 330 170)" />
+    <line x1="325" y1="170" x2="325" y2="195" class="stem" />
+
+    <ellipse cx="365" cy="245" rx="5.5" ry="4" class="note-head" transform="rotate(-20 365 245)" />
+    <line x1="370" y1="245" x2="370" y2="220" class="stem" />
+
+    <ellipse cx="400" cy="175" rx="5.5" ry="4" class="note-head" transform="rotate(-20 400 175)" />
+    <line x1="395" y1="175" x2="395" y2="200" class="stem" />
+
+    <!-- Dashed Voice Cross Lead Lines -->
+    <path class="dashed-line" d="M 330,175 L 365,240" />
+    <path class="dashed-line" d="M 365,240 L 400,180" />
+
+    <!-- Measure 7 -->
+    <ellipse cx="455" cy="175" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 455 175)" />
+
+    <!-- Measure 8 -->
+    <text x="635" y="138" class="finger-num">4</text>
+    <path d="M 600,165 C 603,168 603,172 598,176 C 603,178 602,182 597,185" fill="none" stroke="#000" stroke-width="2" />
+
+    <ellipse cx="620" cy="160" rx="5.5" ry="4" class="note-head" transform="rotate(-20 620 160)" />
+    <line x1="625" y1="160" x2="625" y2="135" class="stem" />
+
+    <ellipse cx="655" cy="160" rx="5.5" ry="4" class="note-head" transform="rotate(-20 655 160)" />
+    <line x1="660" y1="160" x2="660" y2="135" class="stem" />
+
+    <ellipse cx="690" cy="160" rx="5.5" ry="4" class="note-head" transform="rotate(-20 690 160)" />
+    <line x1="695" y1="160" x2="695" y2="135" class="stem" />
+  </g>
+
+  <!-- ================= SYSTEM 3 (Measures 9-12) ================= -->
+  <g id="system-3" transform="translate(0, 400)">
+    <text x="120" y="135" class="measure-num">9</text>
+    <text x="150" y="138" class="finger-num">5</text>
+
+    <!-- Staves -->
+    <path class="staff-line" d="M 120,150 L 730,150 M 120,160 L 730,160 M 120,170 L 730,170 M 120,180 L 730,180 M 120,190 L 730,190" />
+    <path class="staff-line" d="M 120,220 L 730,220 M 120,230 L 730,230 M 120,240 L 730,240 M 120,250 L 730,250 M 120,260 L 730,260" />
+
+    <path d="M 120,150 Q 110,205 120,260" fill="none" stroke="#000" stroke-width="2.5" />
+    <line x1="120" y1="150" x2="120" y2="260" class="bar-line" />
+    <line x1="280" y1="150" x2="280" y2="260" class="bar-line" />
+    <line x1="430" y1="150" x2="430" y2="260" class="bar-line" />
+    <line x1="580" y1="150" x2="580" y2="260" class="bar-line" />
+    <line x1="730" y1="150" x2="730" y2="260" class="bar-line" />
+
+    <!-- Clefs -->
+    <text x="130" y="183" font-size="38" font-family="Arial, sans-serif">𝄞</text>
+    <text x="130" y="250" font-size="30" font-family="Arial, sans-serif">𝄢</text>
+
+    <!-- Measure 9 -->
+    <ellipse cx="155" cy="150" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 155 150)" />
+    <circle cx="166" cy="150" r="1.8" />
+    <line x1="149" y1="152" x2="149" y2="175" class="stem" />
+
+    <!-- Measure 10 -->
+    <ellipse cx="295" cy="185" rx="5.5" ry="4" class="note-head" transform="rotate(-20 295 185)" />
+    <line x1="300" y1="185" x2="300" y2="155" class="stem" />
+    <ellipse cx="330" cy="170" rx="5.5" ry="4" class="note-head" transform="rotate(-20 330 170)" />
+    <line x1="325" y1="170" x2="325" y2="195" class="stem" />
+    <ellipse cx="365" cy="175" rx="5.5" ry="4" class="note-head" transform="rotate(-20 365 175)" />
+    <line x1="360" y1="175" x2="360" y2="200" class="stem" />
+    <ellipse cx="400" cy="185" rx="5.5" ry="4" class="note-head" transform="rotate(-20 400 185)" />
+    <line x1="405" y1="185" x2="405" y2="155" class="stem" />
+
+    <!-- Measure 11 -->
+    <ellipse cx="455" cy="175" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 455 175)" />
+    <circle cx="466" cy="175" r="1.8" />
+
+    <!-- Measure 12 -->
+    <ellipse cx="605" cy="175" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 605 175)" />
+    <circle cx="616" cy="175" r="1.8" />
+  </g>
+
+  <!-- ================= SYSTEM 4 (Measures 13-16) ================= -->
+  <g id="system-4" transform="translate(0, 600)">
+    <text x="120" y="135" class="measure-num">13</text>
+
+    <!-- Staves -->
+    <path class="staff-line" d="M 120,150 L 730,150 M 120,160 L 730,160 M 120,170 L 730,170 M 120,180 L 730,180 M 120,190 L 730,190" />
+    <path class="staff-line" d="M 120,220 L 730,220 M 120,230 L 730,230 M 120,240 L 730,240 M 120,250 L 730,250 M 120,260 L 730,260" />
+
+    <path d="M 120,150 Q 110,205 120,260" fill="none" stroke="#000" stroke-width="2.5" />
+    <line x1="120" y1="150" x2="120" y2="260" class="bar-line" />
+    <line x1="280" y1="150" x2="280" y2="260" class="bar-line" />
+    <line x1="430" y1="150" x2="430" y2="260" class="bar-line" />
+    <line x1="480" y1="150" x2="480" y2="260" class="bar-line" />
+
+    <!-- Final Double Bar Lines -->
+    <line x1="724" y1="150" x2="724" y2="260" class="bar-line" />
+    <line x1="730" y1="150" x2="730" y2="260" class="thick-bar" />
+
+    <!-- Clefs -->
+    <text x="130" y="183" font-size="38" font-family="Arial, sans-serif">𝄞</text>
+    <text x="130" y="250" font-size="30" font-family="Arial, sans-serif">𝄢</text>
+
+    <!-- Measure 13 -->
+    <ellipse cx="155" cy="150" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 155 150)" />
+    <circle cx="166" cy="150" r="1.8" />
+
+    <!-- Measure 14 -->
+    <ellipse cx="295" cy="185" rx="5.5" ry="4" class="note-head" transform="rotate(-20 295 185)" />
+    <line x1="300" y1="185" x2="300" y2="155" class="stem" />
+    <ellipse cx="330" cy="170" rx="5.5" ry="4" class="note-head" transform="rotate(-20 330 170)" />
+    <line x1="325" y1="170" x2="325" y2="195" class="stem" />
+
+    <ellipse cx="365" cy="245" rx="5.5" ry="4" class="note-head" transform="rotate(-20 365 245)" />
+    <line x1="370" y1="245" x2="370" y2="220" class="stem" />
+
+    <ellipse cx="400" cy="175" rx="5.5" ry="4" class="note-head" transform="rotate(-20 400 175)" />
+    <line x1="395" y1="175" x2="395" y2="200" class="stem" />
+
+    <path class="dashed-line" d="M 330,175 L 365,240" />
+    <path class="dashed-line" d="M 365,240 L 400,180" />
+
+    <!-- Measure 15 -->
+    <ellipse cx="450" cy="175" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 450 175)" />
+
+    <!-- Measure 16 -->
+    <ellipse cx="500" cy="260" rx="6" ry="4.5" class="note-head" fill="none" stroke="#000" stroke-width="1.8" transform="rotate(-20 500 260)" />
+  </g>
+
+  <!-- Footer -->
+  <text x="400" y="940" class="footer">Arrangement Copyright © 2022 Music-for-Music-Teachers.com</text>
+  <text x="400" y="955" class="footer">All Rights Reserved</text>
+</svg>
