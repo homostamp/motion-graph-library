@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Outer Seal Gradient -->
+    <linearGradient id="sealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7b2cbf" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#3a86ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00f5d4" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Hexagon Gradient -->
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9d4edd" />
+      <stop offset="40%" stop-color="#4895ef" />
+      <stop offset="100%" stop-color="#4cc9f0" />
+    </linearGradient>
+
+    <!-- Circle Clock Gradient -->
+    <linearGradient id="clockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4895ef" />
+      <stop offset="100%" stop-color="#4cc9f0" />
+    </linearGradient>
+
+    <!-- Checkmark Neon Glow Filter -->
+    <filter id="cyanGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="12" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Dot Glow Filter -->
+    <filter id="dotGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="400" height="400" rx="24" fill="url(#bgGrad)" />
+
+  <g transform="translate(0,0)">
+    <!-- 1. Outer Scalloped / Wavy Seal Badge -->
+    <path d="
+      M 200 45
+      C 220 45, 230 55, 248 60
+      C 266 65, 280 58, 296 68
+      C 312 78, 317 95, 329 109
+      C 341 123, 355 132, 358 151
+      C 361 170, 350 186, 350 200
+      C 350 214, 361 230, 358 249
+      C 355 268, 341 277, 329 291
+      C 317 305, 312 322, 296 332
+      C 280 342, 266 335, 248 340
+      C 230 345, 220 355, 200 355
+      C 180 355, 170 345, 152 340
+      C 134 335, 120 342, 104 332
+      C 88 322, 83 305, 71 291
+      C 59 277, 45 268, 42 249
+      C 39 230, 50 214, 50 200
+      C 50 186, 39 170, 42 151
+      C 45 132, 59 123, 71 109
+      C 83 95, 88 78, 104 68
+      C 120 58, 134 65, 152 60
+      C 170 55, 180 45, 200 45 Z" 
+      fill="none" 
+      stroke="url(#sealGrad)" 
+      stroke-width="2.5" 
+      stroke-opacity="0.75" />
+
+    <!-- 2. Inner Hexagon Framework -->
+    <polygon points="
+      200, 75
+      308.25, 137.5
+      308.25, 262.5
+      200, 325
+      91.75, 262.5
+      91.75, 137.5" 
+      fill="none" 
+      stroke="url(#hexGrad)" 
+      stroke-width="3" 
+      stroke-linejoin="round" />
+
+    <!-- 3. Hexagon Vertices / Nodes -->
+    <!-- Top Node -->
+    <circle cx="200" cy="75" r="5.5" fill="#00f5d4" filter="url(#dotGlow)" />
+    <!-- Top Right Node -->
+    <circle cx="308.25" cy="137.5" r="5" fill="#a259ff" filter="url(#dotGlow)" />
+    <!-- Bottom Right Node -->
+    <circle cx="308.25" cy="262.5" r="5" fill="#3a86ff" filter="url(#dotGlow)" />
+    <!-- Bottom Node -->
+    <circle cx="200" cy="325" r="5.5" fill="#00f5d4" filter="url(#dotGlow)" />
+    <!-- Bottom Left Node -->
+    <circle cx="91.75" cy="262.5" r="5" fill="#a259ff" filter="url(#dotGlow)" />
+    <!-- Top Left Node -->
+    <circle cx="91.75" cy="137.5" r="5" fill="#3a86ff" filter="url(#dotGlow)" />
+
+    <!-- 4. Inner Clock Circle -->
+    <circle cx="200" cy="200" r="75" fill="none" stroke="url(#clockGrad)" stroke-width="3" />
+
+    <!-- Clock Ticks (12, 3, 6, 9 o'clock) -->
+    <line x1="200" y1="131" x2="200" y2="139" stroke="#4cc9f0" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="269" y1="200" x2="261" y2="200" stroke="#4cc9f0" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="200" y1="269" x2="200" y2="261" stroke="#4cc9f0" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="131" y1="200" x2="139" y2="200" stroke="#4cc9f0" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- 5. Dotted Clock Hand / Timestamp Extension -->
+    <line x1="232" y1="168" x2="247" y2="153" 
+          stroke="#00f5d4" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          stroke-dasharray="0 7" 
+          filter="url(#cyanGlow)" />
+
+    <!-- 6. Glowing Central Checkmark -->
+    <path d="M 166 198 L 194 226 L 235 165" 
+          fill="none" 
+          stroke="#00f5d4" 
+          stroke-width="7.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          filter="url(#cyanGlow)" />
+  </g>
+</svg>
