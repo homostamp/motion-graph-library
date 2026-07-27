@@ -1,0 +1,19 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9d4edd" />
+      <stop offset="100%" stop-color="#4895ef" />
+    </linearGradient>
+    <filter id="sealGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Altıgen Çerçeve -->
+  <polygon points="60,10 103,35 103,85 60,110 17,85 17,35" fill="#131522" stroke="url(#sealGrad)" stroke-width="3.5" stroke-linejoin="round" filter="url(#sealGlow)"/>
+  <!-- İç HS Amblemi -->
+  <text x="60" y="68" fill="#00f5d4" font-family="-apple-system, sans-serif" font-size="24" font-weight="900" text-anchor="middle" letter-spacing="1">HS</text>
+</svg>
