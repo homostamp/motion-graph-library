@@ -31,7 +31,7 @@
     <!-- Lock Body (Circular main body) -->
     <circle cx="200" cy="270" r="135" 
             fill="#0f1520" 
-            stroke="#00e5a3" 
+            stroke="#BF00FF" 
             stroke-width="18" />
   </g>
 
