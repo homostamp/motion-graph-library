@@ -1,0 +1,21 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9d4edd" />
+      <stop offset="100%" stop-color="#3a86ff" />
+    </linearGradient>
+  </defs>
+  <!-- İzometrik 3D Küp/Bloklar -->
+  <g transform="translate(20, 20)">
+    <!-- Üst Blok -->
+    <path d="M40 10 L70 25 L40 40 L10 25 Z" fill="#1E1B2E" stroke="url(#bcGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Sol Yüz -->
+    <path d="M10 25 L40 40 L40 70 L10 55 Z" fill="#131522" stroke="url(#bcGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Sağ Yüz -->
+    <path d="M40 40 L70 25 L70 55 L40 70 Z" fill="#1A1D2E" stroke="url(#bcGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Bağlantı Düğümleri -->
+    <circle cx="40" cy="10" r="4" fill="#00f5d4"/>
+    <circle cx="70" cy="55" r="4" fill="#a259ff"/>
+    <circle cx="10" cy="55" r="4" fill="#3a86ff"/>
+  </g>
+</svg>
