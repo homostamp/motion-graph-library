@@ -1,0 +1,68 @@
+<svg width="150" height="200" viewBox="0 0 150 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="premCertGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="35%" stop-color="#3a86ff" />
+      <stop offset="70%" stop-color="#8338ec" />
+      <stop offset="100%" stop-color="#f72585" />
+    </linearGradient>
+
+    <linearGradient id="premBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181A26" />
+      <stop offset="100%" stop-color="#0B0C10" />
+    </linearGradient>
+
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#00f5d4" />
+    </linearGradient>
+
+    <filter id="premGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="6" y="6" width="138" height="188" rx="14" fill="url(#premBgGrad)" stroke="url(#premCertGrad)" stroke-width="3" filter="url(#premGlow)" />
+
+  <rect x="13" y="13" width="124" height="174" rx="10" fill="none" stroke="#3a86ff" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.6" />
+
+  <g opacity="0.12">
+    <polygon points="75,50 110,70 110,115 75,135 40,115 40,70" stroke="#00f5d4" stroke-width="1.5" fill="none"/>
+    <circle cx="75" cy="92.5" r="20" stroke="#8338ec" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <g transform="translate(75, 28)" filter="url(#premGlow)">
+    <circle cx="0" cy="0" r="10" fill="#131522" stroke="#00f5d4" stroke-width="2"/>
+    <path d="M-5,2 L0,-6 L5,2 L3,6 L-3,6 Z" fill="#00f5d4"/>
+  </g>
+  
+  <line x1="30" y1="46" x2="120" y2="46" stroke="#00f5d4" stroke-width="2" stroke-linecap="round" filter="url(#premGlow)"/>
+
+  <line x1="24" y1="64" x2="126" y2="64" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+  <line x1="24" y1="76" x2="95" y2="76" stroke="#3a86ff" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+
+  <line x1="24" y1="96" x2="126" y2="96" stroke="#8338ec" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.85" />
+  <line x1="24" y1="108" x2="90" y2="108" stroke="#8338ec" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.85" />
+  <line x1="24" y1="120" x2="65" y2="120" stroke="#00f5d4" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6" />
+
+  <g transform="translate(24, 150)">
+    <path d="M0 10 Q 10 -5, 20 10 T 40 5" stroke="#00f5d4" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <line x1="0" y1="16" x2="45" y2="16" stroke="#3a86ff" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <g transform="translate(104, 142)" filter="url(#premGlow)">
+    
+    <path d="M -6 12 L -14 36 L -6 30 L 2 36 L -2 12 Z" fill="url(#ribbonGrad)" opacity="0.9" />
+    <path d="M 2 12 L -2 36 L 6 30 L 14 36 L 6 12 Z" fill="url(#ribbonGrad)" opacity="0.75" />
+
+    <circle cx="0" cy="0" r="20" fill="#131522" stroke="#10B981" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="16" fill="#10B981" opacity="0.25" />
+    <circle cx="0" cy="0" r="15" stroke="#10B981" stroke-width="1" stroke-dasharray="3 2" opacity="0.8" />
+
+    <path d="M -7 0 L -2 5 L 8 -5" stroke="#10B981" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
