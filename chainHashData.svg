@@ -1,0 +1,17 @@
+<svg width="300" height="40" viewBox="0 0 300 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="codeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Kod Zemin Şeridi -->
+  <rect x="0" y="0" width="300" height="40" rx="8" fill="#131522" stroke="#9d4edd" stroke-width="1.5"/>
+  <!-- SHA256 Kodu -->
+  <text x="150" y="25" fill="#c084fc" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1.5" filter="url(#codeGlow)">
+    SHA256: 8f4a...e3b9#TSA
+  </text>
+</svg>
