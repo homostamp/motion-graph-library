@@ -1,0 +1,21 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="uploadGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dairesel Arka Halkalar -->
+  <circle cx="40" cy="40" r="35" fill="#4895ef" opacity="0.15" />
+  <circle cx="40" cy="40" r="28" stroke="#00f5d4" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" />
+
+  <!-- Yukarı Ok -->
+  <g filter="url(#uploadGlow)">
+    <path d="M40 55 V25" stroke="#00f5d4" stroke-width="4" stroke-linecap="round" />
+    <path d="M28 35 L40 23 L52 35" stroke="#00f5d4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
