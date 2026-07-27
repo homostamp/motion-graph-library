@@ -1,0 +1,18 @@
+<svg width="400" height="260" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9d4edd" />
+      <stop offset="50%" stop-color="#4895ef" />
+      <stop offset="100%" stop-color="#00f5d4" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131522" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0B0C10" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Arka Kart -->
+  <rect x="10" y="10" width="380" height="240" rx="16" fill="url(#bgGrad)" />
+  <!-- Kesikli Çerçeve -->
+  <rect x="15" y="15" width="370" height="230" rx="14" fill="none" stroke="url(#borderGrad)" stroke-width="2.5" stroke-dasharray="8 8" opacity="0.8" />
+</svg>
