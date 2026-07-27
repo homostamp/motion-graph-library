@@ -19,9 +19,6 @@
     </filter>
   </defs>
 
-  <!-- Background Card -->
-  <rect width="400" height="500" rx="12" fill="#0f1520" />
-
   <!-- Outer Lock / Padlock Graphic -->
   <g filter="url(#glow)">
     <!-- Shackle / Handle -->
