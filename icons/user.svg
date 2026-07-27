@@ -1,0 +1,34 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Kenar Çerçeve Gradient -->
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="50%" stop-color="#4895ef" />
+      <stop offset="100%" stop-color="#9d4edd" />
+    </linearGradient>
+
+    <!-- Neon Glow Efekti -->
+    <filter id="userGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 1. Dış Dairesel Şeffaf Kart/Halka -->
+  <circle cx="60" cy="60" r="48" fill="#131522" stroke="url(#userGrad)" stroke-width="2.5" filter="url(#userGlow)" />
+
+  <!-- Kesikli Aktiflik Halkası -->
+  <circle cx="60" cy="60" r="42" stroke="#00f5d4" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6" />
+
+  <!-- 2. Kullanıcı Profil İkonu (Baş ve Omuz) -->
+  <g filter="url(#userGlow)">
+    <!-- Baş / Kafa -->
+    <circle cx="60" cy="45" r="14" fill="none" stroke="#00f5d4" stroke-width="3" />
+    
+    <!-- Omuz / Gövde Arc -->
+    <path d="M36 82 C36 68, 46 64, 60 64 C74 64, 84 68, 84 82" fill="none" stroke="#00f5d4" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>
