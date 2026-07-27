@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <defs>
+    <!-- Kâğıt Gölgesi -->
+    <filter id="shadow-academic" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Kâğıt Gövdesi -->
+  <path d="M 15,10 H 60 L 85,35 V 110 A 8,8 0 0,1 77,118 H 23 A 8,8 0 0,1 15,110 Z" fill="#ffffff" filter="url(#shadow-academic)"/>
+  
+  <!-- Sağ Üst Kıvrılan Köşe -->
+  <path d="M 60,10 V 30 A 5,5 0 0,0 65,35 H 85 Z" fill="#e2e8f0"/>
+
+  <!-- İç Mavi Kare / Çerçeve -->
+  <rect x="25" y="42" width="50" height="50" rx="6" fill="#2563eb"/>
+  
+  <!-- Akademik Makale Detayları (Beyaz İllüstrasyon) -->
+  <g fill="#ffffff">
+    <!-- Makale Başlık Çizgisi -->
+    <rect x="31" y="48" width="22" height="3.5" rx="1.5"/>
+    
+    <!-- Metin Satırları (Sol Sütun) -->
+    <rect x="31" y="55" width="17" height="2" rx="1" opacity="0.9"/>
+    <rect x="31" y="59" width="17" height="2" rx="1" opacity="0.9"/>
+    <rect x="31" y="63" width="14" height="2" rx="1" opacity="0.9"/>
+    
+    <!-- Metin Satırları (Sağ Sütun) -->
+    <rect x="52" y="55" width="17" height="2" rx="1" opacity="0.9"/>
+    <rect x="52" y="59" width="17" height="2" rx="1" opacity="0.9"/>
+    <rect x="52" y="63" width="11" height="2" rx="1" opacity="0.9"/>
+
+    <!-- Akademik Rozet / Mühür (Onaylı Araştırma Simgesi) -->
+    <circle cx="60" cy="76" r="6"/>
+    <!-- Rozet Kurdelesi -->
+    <path d="M 57,80 L 55,87 L 60,84 L 65,87 L 63,80 Z"/>
+  </g>
+  
+  <!-- Rozet İçindeki Yıldız Motifi (Şeffaf Oyuk) -->
+  <polygon points="60,72.5 61.2,74.8 63.8,75.2 61.9,77 62.3,79.5 60,78.3 57.7,79.5 58.1,77 56.2,75.2 58.8,74.8" fill="#2563eb"/>
+</svg>
