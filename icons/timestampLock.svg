@@ -24,7 +24,7 @@
     <!-- Shackle / Handle -->
     <path d="M 135 170 V 110 A 65 65 0 0 1 265 110 V 170" 
           fill="none" 
-          stroke="#00A3FF" 
+          stroke="#BF00FF" 
           stroke-width="18" 
           stroke-linecap="round"/>
 
